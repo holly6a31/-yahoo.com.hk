@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=UTF-8>
+<title>ゲーム</title>
+<link rel="stylesheet" href="C:\Users\HOLLY\Desktop\style.css">
+</head>
+<body>
+    <header>
+   <div class="container">
+    <div id="branding">
+    <h1><span class="highlight">ゲーム</span>プレイリスト</h1>
+    </div>
+    <nav>
+     <ul> 
+    <li class="current"><a href="C:\Users\HOLLY\Desktop\doraemon.html">紹介</a></li>
+    <li><a href="C:\Users\HOLLY\Desktop\webpage.html">評価</a></li>
+    <li><a href="C:\Users\HOLLY\Desktop\kento.html">記念場面</a></li>
+    
+     </ul>   
+    </nav>
+    </header>
+    <section id="showcase">
+        <div class="container">
+          <h1>ゲームの世界へようこそ！</h1>
+            <p>自分はゲームが大好きですし、ローカライズの経験を生かしたいです。
+            御社は自社開発のモバイルゲームがありますので、ITエンジニアになったら、
+                社内開発魅力を感じて、御社に入社したいと思います。</p>
+                
+        </div>
+    </section>
+    
+    <section id="newsletter">
+    <div class="container">
+        <h1>ゲームを楽しんで！</h1>
+        <form onsubmit="return false">
+            <input type="email" id="name" placeholder="感想を教えてください。">
+            <button type="submit" id="button_1">いいね！</button>
+           <div id="disp-name">
+           </div>
+           <script>
+                var button_1 = document.getElementById('button_1');
+                button_1.addEventListener("click", function(){
+                    var name = document.getElementById("name").value;
+                    document.getElementById("disp-name").innerHTML = name;
+                    
+                })
+
+            </script>
+
+            <div id="fuma">0</div>
+            <button id="counting" >カウントダウン</button>
+            <button id="up">カウントアップ</button>
+            <script>
+                var mari = document.getElementById("fuma");
+                var up = document.getElementById("up");
+                var down = document.getElementById("counting");
+                var count = 0;
+
+               up.addEventListener("click", function(){
+                  count += 1;
+                  mari.innerHTML = count;
+                })
+               down.addEventListener("click", function(){
+                  count -= 1;
+                  mari.innerHTML = count;
+
+                })
+            </script>
+
+    
+        </form>
+    </div>
+    </section>
+    
+    <section id="happy">
+        <div class="container">
+            <div class="box">
+                <img src="C:\Users\HOLLY\Desktop\maxresdefault.jpg">
+                <h3>ゲームの種類</h3>
+                <p>御社に入社したら、ゲームを開発用、必要なIT知識を身につけます。
+                    まずはIT サポートやゲームのローカライズとして勤務します。
+                    仕事しながら、経験や知識も増えますし、自分もIT知識や言語を勉強続いて、
+                    ゲームを開発したいです。
+                    </p>
+            </div>
+            <div class="box">
+                <img src="C:\Users\HOLLY\Desktop\boku.png">
+                <h3>ゲームの面白さ</h3>
+                <p>御社に入社したら、ゲームを開発用、必要なIT知識を身につけます。
+                    まずはIT サポートやゲームのローカライズとして勤務します。
+                    仕事しながら、経験や知識も増えますし、自分もIT知識や言語を勉強続いて、
+                    ゲームを開発したいです。
+                    </p>
+            </div>
+            <div class="box">
+                <img src="C:\Users\HOLLY\Desktop\pokemon.jpg">
+                <h3>気になる点</h3>
+                <p>一個気になる点は、ゲーム内のセーブシステムです。
+                    ストーリーを一段落まで進まないとセーブできません。パレスで小さいなボスとの戦闘を勝ったときに、残りのHPが少ないので、弱い敵からのダメージを受けて死亡してしまうことがあります。
+                    せっかく勝ったボスに再戦闘が必要になるので、自動セーブシステムを追加してほしいです。
+                    </p>
+            </div>
+        </div>
+
+    </section>
+<footer>
+    <p>Written by HOLLY &copy; 2020</p>
+</footer>
+    
+</body>
+</html>
