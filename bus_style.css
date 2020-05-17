@@ -1,0 +1,50 @@
+.body-wrapper{
+    border:2px solid red;
+}
+header{
+    border-bottom: 4px solid red;
+}
+.next-stop-wrapper{
+    display:flex; /* 試下delete 呢句睇下有咩發生？*/
+    margin: 2px 0;
+}
+.bg-red{
+    display: flex;
+    align-items: center;  /*試下無咗呢句又會點？*/
+    background-color: red;
+}
+.white-circle{
+    width:40px;
+    height:40px;
+border-radius: 40px;
+background-color: white;
+margin:20px;
+}
+
+
+
+h1{
+    font-style: inherit;
+    text-align:center;
+    font-size: 60px;
+    
+}
+
+h2{
+    font-style: inherit;
+    text-align:center;
+    font-size: 60px;
+}
+
+.name{
+    font-style: inherit;
+    margin-bottom: 0px;
+    font-size: 40px;
+}
+
+.eng-name{
+    font-style: inherit;
+    margin-top: 0px;
+    font-size: 20px;
+}
+

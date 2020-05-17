@@ -9,7 +9,7 @@ const columns = canvas.width / scale;
   (function setup() {
   snake = new Snake();
   fruit = new Fruit();
-  fruit.pickLocation; 
+  fruit.pickLocation(); 
  
 
   window.setInterval(() => {
@@ -18,10 +18,14 @@ const columns = canvas.width / scale;
    snake.update();
    snake.draw();
    
-   if (snake.eat(Fruit)){
-    fruit.pickLocation;  
-   } 
-}, 250);
+   if (snake.eat(fruit)){
+    fruit.pickLocation();  
+   }
+   snake.checkCollision();
+   document.querySelector(".score")
+   .innerText = snake.total;
+   
+}, 150);
 }());
 
 window.addEventListener("keydown", ((evt) => {
