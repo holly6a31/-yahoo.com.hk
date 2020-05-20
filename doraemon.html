@@ -3,110 +3,141 @@
 <head>
 <meta charset=UTF-8>
 <title>ゲーム</title>
-<link rel="stylesheet" href="C:\Users\HOLLY\Desktop\style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" >
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/0170eecfbc.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    
     <header>
    <div class="container">
-    <div id="branding">
-    <h1><span class="highlight">ゲーム</span>プレイリスト</h1>
-    </div>
-    <nav>
-     <ul> 
-    <li class="current"><a href="C:\Users\HOLLY\Desktop\doraemon.html">紹介</a></li>
-    <li><a href="C:\Users\HOLLY\Desktop\webpage.html">評価</a></li>
-    <li><a href="C:\Users\HOLLY\Desktop\kento.html">記念場面</a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand"><img src="game_logo.png" width="40px" height="40px" > ゲーム通販サイト</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="doraemon.html">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="webpage.html">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kento.html">Pricing</a>
+          </li>
+        </div>
+          <div class="float-right"> 
+            <span style="font-size: 40px";>
+              <i class="fas fa-bars"></i>
+            </span>
+           </div><br>
+            
+            </div>
+        </ul>
+      </div>
+      </div>
+      </nav>
+  </div>
+  </header>
     
-     </ul>   
-    </nav>
-    </header>
-    <section id="showcase">
-        <div class="container">
-          <h1>ゲームの世界へようこそ！</h1>
-            <p>自分はゲームが大好きですし、ローカライズの経験を生かしたいです。
-            御社は自社開発のモバイルゲームがありますので、ITエンジニアになったら、
-                社内開発魅力を感じて、御社に入社したいと思います。</p>
-                
+  
+  <section id="showcase">
+    <div class="container">
+    <div class="jumbotron">
+    <div class="row">
+    <div class="col-md-12">
+  <h1 class="display-4">Hello, world!</h1>
+  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <hr class="my-4">
+  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+</div>
+    </div>
+     </div>        
         </div>
     </section>
-    
+
+
     <section id="newsletter">
-    <div class="container">
-        <h1>ゲームを楽しんで！</h1>
-        <form onsubmit="return false">
-            <input type="email" id="name" placeholder="感想を教えてください。">
-            <button type="submit" id="button_1">いいね！</button>
-           <div id="disp-name">
-           </div>
-           <script>
-                var button_1 = document.getElementById('button_1');
-                button_1.addEventListener("click", function(){
-                    var name = document.getElementById("name").value;
-                    document.getElementById("disp-name").innerHTML = name;
-                    
-                })
+      <div class="container">
+        <div class="wonder">
+      <div class="face">
+        <nav class="navbar navbar-expand-lg nav class="navbar navbar-light" style= "background-color: orange">
+          <a class="navbar-brand">ミニゲーム</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="WEB.html">🐍ゲーム <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">神経衰弱</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+            </div>
+            </span>
+          </div>
+        </nav>
+      </div>
+        </ul>
+        </div>
+         
+   
 
-            </script>
-
-            <div id="fuma">0</div>
-            <button id="counting" >カウントダウン</button>
-            <button id="up">カウントアップ</button>
-            <script>
-                var mari = document.getElementById("fuma");
-                var up = document.getElementById("up");
-                var down = document.getElementById("counting");
-                var count = 0;
-
-               up.addEventListener("click", function(){
-                  count += 1;
-                  mari.innerHTML = count;
-                })
-               down.addEventListener("click", function(){
-                  count -= 1;
-                  mari.innerHTML = count;
-
-                })
-            </script>
-
-    
-        </form>
-    </div>
     </section>
+
     
-    <section id="happy">
-        <div class="container">
-            <div class="box">
-                <img src="C:\Users\HOLLY\Desktop\maxresdefault.jpg">
+    
+    <section id="article">
+        <div class="container"> 
+            <div class="row"> 
+              <div class="col-md-4">
+                <img src="amazing.jpg" width="300px" height="200px">
                 <h3>ゲームの種類</h3>
                 <p>御社に入社したら、ゲームを開発用、必要なIT知識を身につけます。
                     まずはIT サポートやゲームのローカライズとして勤務します。
                     仕事しながら、経験や知識も増えますし、自分もIT知識や言語を勉強続いて、
                     ゲームを開発したいです。
                     </p>
-            </div>
-            <div class="box">
-                <img src="C:\Users\HOLLY\Desktop\boku.png">
+                  </div>
+             
+                <div class="col-md-4">
+                <img src="pokemon.jpg" width="300px" height="200px">
                 <h3>ゲームの面白さ</h3>
                 <p>御社に入社したら、ゲームを開発用、必要なIT知識を身につけます。
                     まずはIT サポートやゲームのローカライズとして勤務します。
                     仕事しながら、経験や知識も増えますし、自分もIT知識や言語を勉強続いて、
-                    ゲームを開発したいです。
-                    </p>
-            </div>
-            <div class="box">
-                <img src="C:\Users\HOLLY\Desktop\pokemon.jpg">
+                    ゲームを開発したいです。</p>
+                </div>
+
+              <div class="col-md-4">
+                <img src="star.jpeg" width="200px" height="200px">
                 <h3>気になる点</h3>
                 <p>一個気になる点は、ゲーム内のセーブシステムです。
-                    ストーリーを一段落まで進まないとセーブできません。パレスで小さいなボスとの戦闘を勝ったときに、残りのHPが少ないので、弱い敵からのダメージを受けて死亡してしまうことがあります。
-                    せっかく勝ったボスに再戦闘が必要になるので、自動セーブシステムを追加してほしいです。
+                    ストーリーを一段落まで進まないとセーブできません。
                     </p>
             </div>
         </div>
-
+      </div>
     </section>
+
+    <div class="container">    
 <footer>
     <p>Written by HOLLY &copy; 2020</p>
 </footer>
-    
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>

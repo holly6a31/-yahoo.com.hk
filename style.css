@@ -1,4 +1,5 @@
-body{font-family: Arial, Helvetica, sans-serif;
+body{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size:20px;
     line-height:1.5;
     padding:0;
@@ -6,95 +7,30 @@ body{font-family: Arial, Helvetica, sans-serif;
     background-color: lightsteelblue;
 }
 
-.container{
-width: 80%;
-margin: auto;
-overflow: hidden;
-}
 
 ul{
     margin:0;
     padding:0;
 }
 
-.button_1{
-    height:23px;
-    background:pin;
-    border:0;
-    padding-left: 15px;
-    padding-right: 15px;
-    color: blue;
-    font-weight: bold;
+.container{
+    width: 100%;
+    margin: auto;
+    }
+
+
+#showcase .jumbotron{
+    background: url(sky.jpg) center no-repeat;
+    background-size: cover;
 }
 
-.dark{
-    padding:15px;
-    background: #4a5d69;
-    color: violet;
-    margin-top:10px ;
-    margin-bottom: 10px;    
-}
 
-header{
-    background:#4a5d69;
-    color:white;
-    padding-top:30px;
-    min-height: 70px;
-    border-bottom: orchid 3px solid;
-}
-header a{ 
-    color:#ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-}
-header ul{
-    margin: 0;
-    padding:0;
-}
-header li{
-    float:left;
-    display: inline;
-    padding:0 20px 0 20px;
-
-}
-header #branding{
-    float:left;
-}
-
-header #branding h1{
-    margin:0;
-}
-header nav{
-    float:right;
-    margin-top:10px;
-}
-header .highlight, header .current a{
-    color:goldenrod;
-    font-weight:bold;
-}
-
-header a:hover{
-    color: white;
-    font-weight: bold;
-
-}
-
-#showcase{
- min-height:400px;
- background-image:url("../Desktop/boku04.jpg");
- background-repeat:no-repeat;
- background-size: cover;
- text-align:center;
- font-weight: bold;
-}
-
+    
 #showcase h1{
-    margin-top:100px;
+    margin-top: 0px;
     font-size: 60px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     color:red;
-    text-decoration: underline black;
 }
 
 #showcase p{
@@ -103,48 +39,23 @@ header a:hover{
 }
 
 #newsletter{
-    padding:3px;
+    margin-top: -1cm;
+    height: 30px;
     color: darkblue;
-    background: orange;
-    
- }
-
- #newsletter h1{
-     float:left;
-     font-size: 30px;
-     
 
  }
 
-#newsletter form{
-    float:right;
-    margin-top:15px;
+ #article .col-md-4{
+   margin-top: 10px;
+   font-size: 16px;
+ }
+
+ #article img{
+    margin-top: 1.5cm;
+    border-radius: 15px;
+    max-width: 100%;
 }
 
-#newsletter input {
-  padding:4px;
-  height:25px;
-  width:250px;  
-}
-
-#happy .box{
-    float:left;
-    width:30%;
-    padding:10px;
-    text-align: justify;
-    font-size: 16px;
-    margin-left: 5px;
-    margin-right:5px;
-    margin-top:20px;
-}
-
-#happy .box img{
-    width:320px;
-    border-color:red;
-    border-width: 5px;
-    border-style: solid;
-    border-radius: 90%;
-}
 
 ul#kento li{
     list-style: none;
@@ -171,7 +82,7 @@ footer{
 }
 
 aside#sidebar{
-    float:right;
+    float: right;
     width: 30%;
     margin-top: 10px;
    
@@ -191,20 +102,20 @@ article#main-col{
 }
 
 @media(max-width: 768px){
-    header #branding,
-        header nav,
-        header nav li,
-        #newsletter h1,
-        #newsletter form,
-        #happy .box,
-        article#main-col,
-        aside#sidebar
-        {
-        float:none;
-        text-align:center;
-        width:100%;
-        }
-     
+            header #branding,
+            header nav,
+            header nav li,
+            #newsletter h1,
+            #newsletter form,
+            #happy .box,
+            article#main-col,
+            aside#sidebar
+            {
+            float:none;
+            text-align:center;
+            width:100%;
+            }
+    
         header{
             padding-bottom:15px;
         }
@@ -227,4 +138,3 @@ article#main-col{
 
 
     }
-}
